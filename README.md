@@ -1,1 +1,1 @@
-# S-nka-Skepp---Inl-mningsuppgift-Grupp
+# Sänka-Skepp---Inl-mningsuppgift-Grupp
