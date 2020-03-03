@@ -3,7 +3,8 @@ package com.company;
 import java.util.Scanner;
 
 public class Human extends Player{
-    public Human(String name) {
+    public Human(String name)
+    {
         super("Human");
     }
     public Human() {
@@ -11,7 +12,7 @@ public class Human extends Player{
     }
 
     public Position getShotCoordinates() {
-        System.out.println("Enter x and y coordinates, e.g. 1,3");
+        System.out.println("Enter two singles number with (,) in between , e.g. 1,3");
         Scanner scanner = new Scanner(System.in);
         String coords = scanner.nextLine();
         String[] coordParts = coords.split(",");
