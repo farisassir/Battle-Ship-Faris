@@ -4,9 +4,8 @@ import java.util.Random;
 
 public abstract class Player {
 
+    protected Map map;
     private String name;
-    private Map map;
-
 
     public Player(String name) {
         this.name = name;
@@ -29,8 +28,9 @@ public abstract class Player {
             } while (map.addShip(startPos, size) == false);
 
         }
-
     }
+
+
     public void renderMap() {
         System.out.println(name + " map:");
         map.render();
@@ -38,12 +38,10 @@ public abstract class Player {
 
     public void shootAt(Position pos) {
         map.shootAt(pos);
-
     }
 
     public boolean hasFloatingShips() {
         return map.hasFloatingShips();
-
     }
-}
 
+}

@@ -2,8 +2,9 @@ package com.company;
 
 import java.util.Random;
 
-public class Computer extends Player {
-    public Computer() {
+public class ComputerPlayer extends Player {
+
+    public ComputerPlayer() {
         super("Computer");
     }
 
@@ -16,4 +17,5 @@ public class Computer extends Player {
                 position.x, position.y);
         return position;
     }
+
 }

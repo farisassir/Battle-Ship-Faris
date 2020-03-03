@@ -26,6 +26,7 @@ public class Map {
 
     }
 
+
     private String getSymbol(SquareState squareState) {
         switch (squareState) {
             case HIT:
@@ -45,7 +46,7 @@ public class Map {
         return false;
     }
 
-
+    //Draw the map on the screen
     public void render() {
         String xValues = " ";
         for (int i = 0; i < GRID_SIZE; i++) {
@@ -109,11 +110,3 @@ public class Map {
     }
 
 }
-
-
-
-
-
-
-
-

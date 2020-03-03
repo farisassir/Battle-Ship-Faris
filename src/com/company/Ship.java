@@ -1,6 +1,7 @@
 package com.company;
 
 public class Ship {
+
     private Position[] positions;
     private int size;
     private int hits = 0;
@@ -10,8 +11,7 @@ public class Ship {
         positions = getPositions(size, startPos);
     }
 
-    public static Position[]
-    getPositions(int size, Position startPos) {
+    public static Position[] getPositions(int size, Position startPos) {
         Position[] calculatedPositions = new Position[size];
         calculatedPositions[0] = startPos;
 
@@ -36,10 +36,7 @@ public class Ship {
         return false;
     }
 
-    public void addHit()
-    {
+    public void addHit() {
         hits++;
     }
 }
-
-
